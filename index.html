@@ -72,6 +72,23 @@
             height: 48px;
         }
 
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
         /* Hero Section */
         .hero {
             text-align: center;
@@ -220,6 +237,14 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            nav {
+                gap: 16px;
+            }
             .hero h1 {
                 font-size: 40px;
             }
@@ -261,6 +286,11 @@
                 </svg>
                 <span>twelve</span>
             </div>
+            <nav>
+                <a href="index.html" style="color: var(--gold);">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="support.html">Support</a>
+            </nav>
         </header>
 
         <section class="hero">
@@ -325,14 +355,23 @@
                     <img src="mkt_05_settings.png" alt="Settings">
                     <div class="screenshot-label">Stay in Control</div>
                 </div>
+                <div class="screenshot-card">
+                    <img src="mkt_02_home.png" alt="Home View">
+                    <div class="screenshot-label">Elegant Home Design</div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="mkt_06_notifications.png" alt="Notifications">
+                    <div class="screenshot-label">Smart Notifications</div>
+                </div>
             </div>
         </section>
 
         <footer>
             <p>&copy; 2026 Twelve Prayer App. Made with ❤️ for the ummah.</p>
             <p>
-                <a href="https://twelveapps.xyz/privacy">Privacy Policy</a> ·
-                <a href="mailto:support@twelveapps.xyz">Support</a>
+                <a href="index.html">Home</a> ·
+                <a href="privacy.html">Privacy Policy</a> ·
+                <a href="support.html">Support</a>
             </p>
         </footer>
     </div>
