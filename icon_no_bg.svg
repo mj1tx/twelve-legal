@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" fill="none" viewBox="0 0 1024 1024">
+  <defs>
+    <!-- Profound "Minus" Effect (Frosted Glass) -->
+    <linearGradient id="minusGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 
+    The Peak of the Dome: 
+    - CHOPPED TOP: The pointy vertex is removed. 
+    - The dome now meets the flagpole with a flat, structural interface (width of the pole).
+    - Symmetrical drooping shoulders.
+    - No Outlines.
+  -->
+  <path 
+    id="dome-chopped"
+    d="M 508,633 
+       L 482,660 
+       C 380,780 200,730 0,850 
+       V 1024 
+       H 1024 
+       V 850 
+       C 824,730 644,780 542,660 
+       L 516,633 
+       H 508
+       Z" 
+    fill="url(#minusGlass)"
+  />
+
+  <!-- The Flag Pole: Negative Fills ONLY -->
+  <rect x="508" y="391" width="8" height="242" fill="url(#minusGlass)" rx="1" />
+
+  <!-- The Waving Flag: Negative Fills ONLY -->
+  <path 
+    id="flag"
+    d="M 516,401 
+       C 580,376 640,426 720,401 
+       L 720,531 
+       C 640,556 580,498 516,523 
+       Z" 
+    fill="url(#minusGlass)"
+  />
+</svg>
